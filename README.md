@@ -6,7 +6,7 @@
  .NET v4.7
 
 ## Licence
-[MIT](https://github.com/tk-yoshimura/PNGReadWrite/blob/master/LICENSE)
+[MIT](https://github.com/tk-yoshimura/TrackBall/blob/master/LICENSE)
 
 ## Author
 
