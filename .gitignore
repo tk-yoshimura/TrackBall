@@ -1,9 +1,13 @@
 ﻿/.vs
+/dll
 /packages
 /**/bin
 /**/obj
-/TestResults
 /**/*.png
 /**/*.jpg
+/**/*.bak
+/**/*.user
+/TestResults
+/**/__pycache__
 /**/PublishProfiles
 !/trackball.png

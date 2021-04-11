@@ -3,7 +3,7 @@
 ![TrackBall](https://github.com/tk-yoshimura/TrackBall/blob/master/trackball.png)
  
 ## Requirement
- .NET v4.7
+ .NET 5.0
 
 ## Licence
 [MIT](https://github.com/tk-yoshimura/TrackBall/blob/master/LICENSE)
