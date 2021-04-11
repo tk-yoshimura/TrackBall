@@ -33,7 +33,24 @@ namespace ThreeDimensionalControls {
 
         Bitmap panel, ball;
 
-        public Quaternion Quaternion => new(new Vector3((float)quat_i, (float)quat_j, (float)quat_k), (float)quat_r);
+        public Quaternion Quaternion {
+            get {
+                return new(new Vector3((float)quat_i, (float)quat_j, (float)quat_k), (float)quat_r);
+            }
+            set {
+                quat_r = value.W / value.Length();
+                quat_i = value.X / value.Length();
+                quat_j = value.Y / value.Length();
+                quat_k = value.Z / value.Length();
+
+                if (double.IsNaN(quat_r)) {
+                    Reset();
+                }
+                else {
+                    DrawBall();
+                }
+            }
+        }
 
         public event TrackBallRolledEventHandler ValueChanged;
 
@@ -41,7 +58,7 @@ namespace ThreeDimensionalControls {
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetImage();
+            DrawImage();
         }
 
         protected override void OnPaint(PaintEventArgs pe) {
@@ -61,7 +78,7 @@ namespace ThreeDimensionalControls {
         }
 
         protected override void OnResize(EventArgs e) {
-            SetImage();
+            DrawImage();
             base.OnResize(e);
             Invalidate();
         }
@@ -315,7 +332,7 @@ namespace ThreeDimensionalControls {
             Invalidate();
         }
 
-        protected void SetImage() {
+        protected void DrawImage() {
             pic_size = Math.Max(Math.Min(this.Width, this.Height) / 2 * 2, 50);
 
             panel_size = new Size(pic_size, pic_size);
