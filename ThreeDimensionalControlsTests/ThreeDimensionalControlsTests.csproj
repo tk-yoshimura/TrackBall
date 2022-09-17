@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="ThreeDimensionalControls">
-      <HintPath>..\ThreeDimensionalControls\bin\Debug\net5.0-windows\ThreeDimensionalControls.dll</HintPath>
+      <HintPath>..\ThreeDimensionalControls\bin\Debug\net6.0-windows\ThreeDimensionalControls.dll</HintPath>
     </Reference>
   </ItemGroup>
 
