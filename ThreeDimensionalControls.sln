@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreeDimensionalControls", "ThreeDimensionalControls\ThreeDimensionalControls.csproj", "{EE408404-97E2-4ECC-A46C-83D83D952156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeDimensionalControlsTests", "ThreeDimensionalControlsTests\ThreeDimensionalControlsTests.csproj", "{65232C72-38B6-4F8B-AD69-6B8B0E14466C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreeDimensionalControlsTests", "ThreeDimensionalControlsTests\ThreeDimensionalControlsTests.csproj", "{65232C72-38B6-4F8B-AD69-6B8B0E14466C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EE408404-97E2-4ECC-A46C-83D83D952156} = {EE408404-97E2-4ECC-A46C-83D83D952156}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C9F509E-B00A-4556-AD0A-D858EDA1B0B0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Global
