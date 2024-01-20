@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-// Copyright (c) T.Yoshimura 2019-2021
+// Copyright (c) T.Yoshimura 2019-2024
 // https://github.com/tk-yoshimura
 
 namespace ThreeDimensionalControls {

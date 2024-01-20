@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-// Copyright (c) T.Yoshimura 2019-2021
+// Copyright (c) T.Yoshimura 2019-2024
 // https://github.com/tk-yoshimura
 
 namespace ThreeDimensionalControls {
@@ -11,9 +11,7 @@ namespace ThreeDimensionalControls {
         Bitmap panel, ball;
 
         protected void DrawPanel() {
-            if (panel is not null) {
-                panel.Dispose();
-            }
+            panel?.Dispose();
             if (IsValidSize()) {
                 panel = new Bitmap(panel_size.Width, panel_size.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             }
@@ -68,8 +66,7 @@ namespace ThreeDimensionalControls {
         }
 
         protected void DrawBall() {
-            if (ball is not null)
-                ball.Dispose();
+            ball?.Dispose();
 
             if (IsValidSize()) {
                 ball = new Bitmap(ball_size.Width, ball_size.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
